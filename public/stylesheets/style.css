@@ -1,0 +1,116 @@
+/*
+    file  : style.css (CODi)
+    autor : 정재균 (jgiraffe@naver.com)
+    breif : css for main page, connect page
+*/
+
+/********** default **********/
+* {
+    font-family: Helvetica, sans-serif;
+    /*font-size: 16px;*/
+       
+    padding: 0;
+    border: 0;
+    margin: 0;
+    color: white;
+}
+
+.main, .connect, .edit {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: black; /* #dc6c5f */ 
+}
+
+.connect, .edit {
+    display: none;
+}
+
+/********** main page **********/
+.main * {
+    font-size: 16px;
+    position: relative;
+    top: 35%;
+    text-align: center;
+}
+
+/* CODi logo */
+.main h1 {
+    font-size: 7em;
+    letter-spacing: 0.1em;
+}
+
+.main button {
+    width: 5em;
+    height: 2em;
+    margin-top: 1.1em;
+    background-color: red;
+}
+
+.main button:hover {
+    cursor: pointer;
+    color: black;
+    background-color: cyan;
+}
+
+.typingtext {
+    width: 400px;
+    overflow: hidden;
+    white-space: nowrap;
+
+    border-right: 2px solid;
+    margin: 0 auto;
+    
+    animation:
+    typing 2.2s steps(26, end),
+    bar 0.8s infinite;
+}
+
+@keyframes typing {
+    from { width: 0; }
+    to { width: 400px; }
+}
+
+@keyframes bar {
+    from, to { border-color: transparent }
+    50% { border-color: white; }
+}
+
+/********** connect page **********/
+.connect * {
+    font-size: 16px;
+    position: relative;
+    top: 33%;
+    text-align: center;
+}
+
+.connect h1 {
+    font-size: 3em;
+}
+
+.connect .input, .connect button {
+    font-size: 40px;
+    font-weight: bold;
+    background-color: black;
+    border: 1px solid gray;
+    width: 220px;
+    height: 70px;
+    outline: none;
+    margin-top: 1%;
+    
+}
+
+.connect .input {
+    font-size: 55px;
+    letter-spacing: 10px;
+    width: 219px;
+    margin-top: 2%;
+}
+
+.connect button:hover {
+    cursor: pointer;
+    color: red;
+}
+
+/********** editor page **********/
+/* */
